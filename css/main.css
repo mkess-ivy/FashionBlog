@@ -1,0 +1,222 @@
+/* =========REUSABLES ==============*/
+ 
+body {
+	margin: 0;
+	padding: 3em;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	background: #FFF;
+	color: #444;
+	max-width: 1200px;
+	border-left: 6px solid #DDD;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* =========BLOCKS ==============*/
+
+.logo {
+	font-size: 3em;
+	font-weight: normal;
+	float: left;
+	width: 27%;
+}
+
+.tagline {
+	font-size: 1.6em;
+	font-weight: normal;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 70%;
+	float: left;
+}
+
+.right-aside {
+	/*background: Red;*/
+	height: 1475px;
+	width: 28%;
+	float: right;
+	margin-top: 122px;
+	margin-left: 22px;
+	/*padding-right: 1px;*/
+}
+
+/* =========ELEMENTS ==============*/
+
+a {
+	color: #D00;
+	text-decoration: none;
+	transition: all 300ms;
+}
+
+a:hover {
+	color: #A00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	font-size: 2em;
+	font-weight: normal;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.title a {
+	color: inherit;
+}
+.title a:hover {
+	color: #D00;
+}
+
+.date {
+	font-size: 2em;
+	font-weight: normal;
+	color: #CCC;
+	margin: 0;
+	padding: 0;
+}
+
+.more-link {
+	font-weight: bold;
+	text-align: right;
+	padding-right: 40px;
+}
+
+img {
+	display: block;
+	margin: 10px 0;
+	max-width: 100%;
+}
+
+footer {
+	color: #BBB;
+}
+
+.menu-main,
+.menu-footer {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-main li,
+.menu-footer li {
+	display: inline-block;
+}
+
+.menu-main a {
+	display: inline-block;
+	font-size: 1.25em;
+	margin-right: .75em;
+	color: #DDD;
+	padding: 10px;
+	/*border-bottom: 2px solid #EEE;*/
+}
+.menu-main a:hover {
+	color: black;
+	border-bottom-color: #BBB;
+}
+
+.menu-footer li::after {
+	content: ' | ';
+}
+
+.menu-footer li:last-child::after {
+	content: '';
+}
+
+.teaser {
+	border-bottom: 1px solid #DDD;
+	margin: 3em 0;
+	padding-bottom: 1.5em;
+}
+
+.teasermod {
+	border-bottom: 1px solid #ddd;
+	/*margin-bottom: 20px;*/
+}
+
+
+.teaser p:first-letter {
+	float: left;
+	font-size: 6em;
+	line-height: 1;
+	color: #DDD;
+	margin: -.1em .1em 0 -.1em;
+}
+
+.aside-text {
+	font-size: 16px;
+	padding-right: 40px;
+}
+/* =========MODIFIERS ==============*/
+
+.tagline-move {
+	float: left;
+	margin-top: 29px;
+}
+
+.blackswatch {
+	background: black;
+}
+
+.menu-main-width {
+	width: 100%;
+	/*background: Green;*/
+}
+
+.menu-main-list {
+	padding: 0 24.5px;
+}
+
+.menu-footer-width {
+	width: 100%;
+	float: left;
+}
+
+.asidetitle {
+	font-size: 18px;
+	padding-bottom: 25px;
+	margin-bottom: 35px;
+	/*background: Green;*/
+	/*padding-left: 10px;*/
+}
+
+.asidetitle li {
+	color: #333;
+	/*list-style: DarkGrey;*/
+}
+
+.ad {
+	max-width: 275px;
+	height: 275px;
+	background: #d3d3d3;
+	margin-left: 15px;
+	border: 1px solid #e2e2e2;
+	font-size: 65px;
+	font-weight: 700;
+	color: #333;
+}
+
+.ad p {
+	margin: 90px 0 0 100px;
+	/*margin: auto;*/
+}
