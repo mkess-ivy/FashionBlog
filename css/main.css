@@ -1,5 +1,5 @@
 /* =========REUSABLES ==============*/
- 
+
 body {
 	margin: 0;
 	padding: 3em;
@@ -12,6 +12,7 @@ body {
 	border-left: 6px solid #DDD;
 }
 
+/* clearfix */
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
@@ -45,9 +46,8 @@ body {
 }
 
 .right-aside {
-	/*background: Red;*/
 	height: 1475px;
-	width: 28%;
+	width: 24%;
 	float: right;
 	margin-top: 122px;
 	margin-left: 22px;
@@ -131,7 +131,7 @@ footer {
 	/*border-bottom: 2px solid #EEE;*/
 }
 .menu-main a:hover {
-	color: black;
+	color: #d00;
 	border-bottom-color: #BBB;
 }
 
@@ -167,6 +167,7 @@ footer {
 	font-size: 16px;
 	padding-right: 40px;
 }
+
 /* =========MODIFIERS ==============*/
 
 .tagline-move {
@@ -209,14 +210,41 @@ footer {
 	max-width: 275px;
 	height: 275px;
 	background: #d3d3d3;
-	margin-left: 15px;
+	/*margin-left: 15px;*/
 	border: 1px solid #e2e2e2;
-	font-size: 65px;
+	font-size: 4em;
 	font-weight: 700;
 	color: #333;
+  text-align: center;
 }
 
 .ad p {
-	margin: 90px 0 0 100px;
-	/*margin: auto;*/
+	/* margin: 90px 0 0 100px;
+	margin: auto;*/
+}
+
+
+/* ========= RESPONSIVE STYLES ==============*/
+@media screen and (max-width: 950px) {
+  .right-aside {
+    width: 100%;
+    margin: 2% 0 10%;
+  }
+
+	.wrapper {
+		width: 95%;
+	}
+
+	.tagline-move {
+		margin: 2% 6%;
+	}
+
+	.tagline {
+		font-size: 1.3em;
+	}
+
+	.logo {
+		font-size: 2em;
+	}
+
 }
